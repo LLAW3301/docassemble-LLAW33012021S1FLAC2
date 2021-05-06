@@ -1,0 +1,32 @@
+# We keep all the endpoints in this file.
+---
+objects:
+  - endpoints: DADict
+---
+event: endpoints['Informal_Amicable_Discussions']
+question: "Informal Amicable Discussions"
+subquestion: |
+  
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoints['Formal_Notice']
+question: "Formal Notice"
+subquestion: |
+  
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoints['Mediation_&_Court']
+question: "Mediation & Court"
+subquestion: |
+
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---

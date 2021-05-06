@@ -2,9 +2,9 @@
 ---
 metadata:
   title: |
-    SACAT Homelessness Advisor
+    FLAC2 App
   short title: |
-    Homelessness Advisor
+    FLAC2
   organisation: Flinders University
   show login: True
 ---
@@ -21,4 +21,11 @@ default screen parts:
     </i></small></cite>
     </div>
     </div>
+---
+include:
+  - FLAC2.endpoints.yml
+---
+mandatory: True
+code: |
+  
 ---
