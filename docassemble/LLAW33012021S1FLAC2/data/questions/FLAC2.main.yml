@@ -24,8 +24,23 @@ default screen parts:
 ---
 include:
   - FLAC2.endpoints.yml
+  - FLAC2.questions.yml
+---
+# This block is the welcome screen
+mandatory: True
+question: FLAC2 App # Ask what it should be
+subquestion: |
+   ***content goes here***
+buttons:
+  - I agree and wish to continue: continue
+  - I do not agree and wish to exit: exit
 ---
 mandatory: True
 code: |
-  
+  if fencing_process == 'IAD':
+    endpoints['Informal_Amicable_Discussions']
+  elif fencing_process == 'FN':
+    endpoints['Formal_Notice']
+  else:
+    endpoints['Mediation_&_Court']
 ---

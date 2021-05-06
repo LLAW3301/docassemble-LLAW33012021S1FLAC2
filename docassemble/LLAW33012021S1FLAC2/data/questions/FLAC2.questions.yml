@@ -1,0 +1,13 @@
+---
+#this is the first question page (homepage)
+question: "" 
+subquestion: |
+  Homepage
+fields: 
+  - no label: fencing_process
+    datatype: radio
+    choices:
+     - "Informal Amicable Discussion": IAD
+     - "Formal Notice": FN
+     - "Mediation & Court": M&C
+---
