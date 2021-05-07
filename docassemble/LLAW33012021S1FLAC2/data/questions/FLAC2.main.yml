@@ -41,7 +41,7 @@ code: |
   if fencing_process == 'IAD':
     endpoints['Informal_Amicable_Discussions']
   elif fencing_process == 'FN':
-    if FN_issue == 'FN_neighbours' and FN_30days or FN_issue == 'FN_you' and            FN_identity:
+    if FN_issue == 'FN_neighbours' and FN_30days or FN_issue == 'FN_you' and            FN_identity or FN_adjoin or FN_strata or FN_adjoinOwner or FN_tenant:
       endpoints['FN_cannotHelp']
     else:
       endpoints['Formal_Notice']

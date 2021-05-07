@@ -20,6 +20,7 @@ fields:
      - "Want to replace your Fence with a new one even though the existing one           is not broken": FN_you
      - "Not agree to your neighbours Form 2 Notice of intention to replace the           existing fence": FN_neighbours
 ---
+# Below questions are used to determine eligibility to fill out a form
 question: |
   Is the Identity of your neighbour unknown?
 yesno: FN_identity
@@ -27,3 +28,19 @@ yesno: FN_identity
 question: |
   Has it been more than 30 Days since you recieved the Notice?
 yesno: FN_30days
+---
+question: |
+  Does your land adjoin Crown or Council Land?
+yesno: FN_adjoin
+---
+question: |
+  Is your property within Strata Units?
+yesno: FN_strata
+---
+question: |
+  Is the whereabouts of the adjoining owner unknown?
+yesno: FN_adjoinOwner
+---
+question: |
+  Are you a tenant?
+yesno: FN_tenant
