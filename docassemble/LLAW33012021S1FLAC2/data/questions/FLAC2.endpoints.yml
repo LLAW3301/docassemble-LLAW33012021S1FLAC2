@@ -15,8 +15,11 @@ buttons:
 event: endpoints['Formal_Notice']
 question: "Formal Notice"
 subquestion: |
-  
-
+  % if FN_issue == 'FN_you':
+  ${a_name}
+  % else:
+  ${o_name}
+  % endif
 buttons:
   - Exit: exit
   - Restart: restart

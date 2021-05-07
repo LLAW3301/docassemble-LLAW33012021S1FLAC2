@@ -44,3 +44,27 @@ yesno: FN_adjoinOwner
 question: |
   Are you a tenant?
 yesno: FN_tenant
+--- 
+#Form 2 split this up in to section after
+question: |
+  Form No. 2 Notice
+fields:
+  - Applicants Name: a_name
+  - Applicants Address: a_address
+  - Description of Applicants Land: a_land
+  - Description of Joint Land: j_land
+  - Describe the nature of proposed fencing work: f_work
+  - State the cost of proposed fencing work: c_work
+  - State amount neighbour will have to pay: n_pay
+  - Name: fc_name #fence contractor
+  - Address: fc_address
+---
+#Form 3 split this up in to section after
+question: |
+  Form No. 3 Cross-Notice
+fields:
+  - Name of Objector: o_name
+  - Date of Original Notice from neighbour: o_notice
+  - Paticulars of objection: p_objection
+  - Counter proposals: c_proposals
+---
