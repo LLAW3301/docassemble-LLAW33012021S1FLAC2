@@ -6,7 +6,22 @@ objects:
 event: endpoints['Informal_Amicable_Discussions']
 question: "Informal Amicable Discussions"
 subquestion: |
-  
+  Have you contacted your neighbour about the replacement? 
+
+   
+
+  It will not be necessary for you to proceed if you and your neighbour reach an agreement. Verbal agreements are useful. However, written agreements are preferable. 
+
+   
+
+  You may use this [Sample Fencing Agreement template](https://lawhandbook.sa.gov.au/ch31s02s01.php). 
+
+   
+
+  The Flinders Legal Centre can review your agreement before it is finalised. 
+
+  You can book an appointment with them 
+  [here](https://www.flinderslegalcentre.net.au/dir/home/appointments/). 
 
 buttons:
   - Exit: exit

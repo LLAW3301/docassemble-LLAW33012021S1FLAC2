@@ -45,7 +45,7 @@ question: |
   Are you a tenant?
 yesno: FN_tenant
 --- 
-#Form 2 split this up in to section after
+#Form 2 could split this up
 question: |
   Form No. 2 Notice
 fields:
@@ -56,10 +56,12 @@ fields:
   - Describe the nature of proposed fencing work: f_work
   - State the cost of proposed fencing work: c_work
   - State amount neighbour will have to pay: n_pay
-  - Name: fc_name #fence contractor
+  - note: |
+      #### Fences Contractor
+  - Name: fc_name 
   - Address: fc_address
 ---
-#Form 3 split this up in to section after
+#Form 3 
 question: |
   Form No. 3 Cross-Notice
 fields:
