@@ -35,12 +35,16 @@ buttons:
   - I agree and wish to continue: continue
   - I do not agree and wish to exit: exit
 ---
+# This code block runs the appliction and determines where to send the user dependant on their responses
 mandatory: True
 code: |
   if fencing_process == 'IAD':
     endpoints['Informal_Amicable_Discussions']
   elif fencing_process == 'FN':
-    endpoints['Formal_Notice']
+    if FN_issue == 'FN_neighbours' and FN_30days or FN_issue == 'FN_you' and            FN_identity:
+      endpoints['FN_cannotHelp']
+    else:
+      endpoints['Formal_Notice']
   else:
     endpoints['Mediation_&_Court']
 ---

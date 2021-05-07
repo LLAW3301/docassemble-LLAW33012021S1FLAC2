@@ -30,3 +30,12 @@ buttons:
   - Exit: exit
   - Restart: restart
 ---
+event: endpoints['FN_cannotHelp']
+question: "Sorry, but our application cannot help"
+subquestion: |
+
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
