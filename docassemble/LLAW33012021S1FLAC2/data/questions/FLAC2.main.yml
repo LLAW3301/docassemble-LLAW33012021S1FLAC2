@@ -28,9 +28,16 @@ include:
 ---
 # This block is the welcome screen
 mandatory: True
-question: FLAC2 App # Ask what it should be
+question: ""
 subquestion: |
-   ***content goes here***
+  Welcome to the Flinders Legal Centre (FLC) Fencing Application. This app will  help you with your fencing dispute, and will also guide you to services         available which may help you resolve your dispute.  
+
+  The FLC is a legal clinic that provides free legal advice to clients. You can  make an appointment to consult student interns or recent graduates (who are     supervised by an experienced solicitor). 
+
+  Please note the FLC only provides advice where matters do not exceed the sum    of $12,000, and helps clients with understanding the law, providing             appropriate options to resolve disputes, and helping clients with Court         procedures and preparing appropriate documents if the matter is going before a   Court, or is already in Court. 
+
+  ***Disclaimer:***   
+  The information provided by this application applies only to properties in      South Australia. This application does not provide legal advice. Clicking       "Next" does not mean you are entering any sort of contract (legal or             otherwise) with the FLC. You are agreeing to the terms of this disclaimer by     clicking "Next". If you do not agree, you must exit this application.
 buttons:
   - I agree and wish to continue: continue
   - I do not agree and wish to exit: exit

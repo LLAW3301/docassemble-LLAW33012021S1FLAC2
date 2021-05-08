@@ -28,8 +28,18 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['Formal_Notice']
-question: "Formal Notice"
+question: "Please download your PDF documents."
 subquestion: |
+  Please note that you cannot email Notice to your neighbour. Notice must be given in person. Your neighbour may be deemed to have agreed to your proposal if 30 days have passed since you provided Notice or Cross-notice and your neighbour has not served notice of his objection. 
+
+   
+
+  You may need to attend mediation or go to court if you and your neighbour cannot reach an agreement.  
+
+   
+
+  You can contact the Flinders Legal Centre [here](https://www.flinderslegalcentre.net.au/dir/).
+  
   % if FN_issue == 'FN_you':
   ${a_name}
   % else:
@@ -42,7 +52,37 @@ buttons:
 event: endpoints['Mediation_&_Court']
 question: "Mediation & Court"
 subquestion: |
+  If the fencing dispute cannot be resolved by informal discussions, then the parties may be able to resolve their dispute by mediation and going to Court. 
 
+  Mediation is cheaper than going to Court, and is usually recommended before the matter is taken to Court. Mediation can be arranged by contacting the [Community Mediation Services](https://www.unitingcommunities.org/service/legal-services/mediation). They act as an independent third party and can help the parties reach an agreement. Note that both parties need to attend the mediation process, but attendance is voluntary. The process can take a few hours depending on the nature of the dispute. Mediation is confidential and anything that is said or written during Mediation cannot be used in Court. Any agreement that is reached in Mediation is not legally binding, but the parties can ask to have the written proceedings can be used as evidence in further proceedings (https://www.unitingcommunities.org/service/legal-services/mediation). 
+
+  If the fencing dispute cannot be resolved by Mediation (or if the parties are not willing to mediate) then the matter can be taken to Court. Generally, the matter will be heard in the Minor Civil Claims Division of the Magistrates Court, where parties represent themselves unless both agree to have lawyers present [Magistrates Court Act 1991 (SA) s 38(4)]. A Form 2A Originating Application-Fences Act should be used, with a supporting affidavit. These documents can be found [here](http://www.courts.sa.gov.au/ForLawyers/Pages/UniformCivilForms-Current.aspx).  
+
+  The Fences Act specifies that ‘a person who is affected by the dispute’ needs to lodge an application to take the matter to Court in order to ‘seek determination of the matter’ [Fences Act 1975 (SA) s 12(1) (‘Fences Act’)]. 
+
+  The Court has power to make various determinations as set out in s 12(2) of the Fences Act.  Generally, the Court can determine: 
+
+  * If the fence should be replaced 
+
+  * Type of fencing 
+
+  * Location of the fence 
+
+  * The person or persons who can carry out the fencing work 
+
+  * When the work can be carried out 
+
+  * The cost involved with the work and how these costs are to be shared 
+
+  * Entry orders to the properties involved 
+
+  The Court can also determine if the fence is an ‘adequate fence’ and the Court will consider what the standard of good fencing in that particular area is and the purpose for which the adjoining lands are used [Fences Act s 12(8)]. There is no clear guideline as to what type of fence will be permitted when two neighbours each propose equally meritorious fences. In most cases, the Court will try to get the neighbours to reach agreement. 
+
+  In determining costs, generally the Court will assume that each will get equal benefit from the fence. However if it can be shown that one neighbour will get greater benefit, the Court can order that person to pay more or all of the cost. If an owner cannot afford the amount awarded, the Court can order payment by instalments. If the adjoining owner cannot be found, the Court can make an order in that person's absence [Fences Act 1975 (SA) s 9]. 
+
+  You can also contact the [Flinders Legal Centre (FLC)](https://www.flinders.edu.au/engage/community/clinics/flinders-legal-centre) for help or if you wish to discuss your dispute in order to determine what options may be available to you. 
+
+  You can also find more information through the Legal Services Commission [here](https://lawhandbook.sa.gov.au/ch31s02.php).  
 
 buttons:
   - Exit: exit

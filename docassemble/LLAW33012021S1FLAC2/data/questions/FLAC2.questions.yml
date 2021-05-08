@@ -1,6 +1,14 @@
 ---
 #this is the first question page (homepage)
-question: "Homepage" 
+question: "" 
+subquestion: |
+  Any disputes involving fencing in South Australia can be broken down into three stages as detailed below. 
+
+  **1. Informal Amicable Discussions:** This is where you can agree with your neighbour that there may not be any need for formal legal documents, except a written contractual agreement. Please select the "Informal Amicable Discussions" from the pull down list to get more information about this process. 
+
+  **2. Formal Notice:** Please select "Formal Notice" below to get more information about this process. 
+
+  **3. Mediation and Court:** This is applicable when you are not able to resolve the dispute and require mediation or a court order to resolve the dispute. Please select "Mediation and Court" from the pull down list for more information. 
 fields: 
   - no label: fencing_process
     datatype: radio
