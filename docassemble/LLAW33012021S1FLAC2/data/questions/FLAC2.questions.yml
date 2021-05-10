@@ -98,7 +98,7 @@ fields:
 question: |
   Form No. 3 Cross-Notice
 fields:
-  - Name of Objector: o_name
+  - What is your Full Name: oo_name
   - Date of Original Notice from neighbour: o_notice
   - Paticulars of objection: p_objection
   - Counter proposals: c_proposals
