@@ -45,6 +45,9 @@ subquestion: |
   % else:
   ${o_name}
   % endif
+
+attachment code: |
+  [form]
 buttons:
   - Exit: exit
   - Restart: restart
@@ -112,5 +115,13 @@ attachment:
     filename: Result Printout
     valid formats:
       - pdf
-    docx template file: FORM_NO_2_NOTICE.docx
-    variable name: form2
+    docx template file: 
+      code: |
+        form_finder
+    variable name: form
+---
+code: |
+  if FN_issue == 'FN_you':
+    form_finder = 'FORM_NO_2_NOTICE.docx'
+  else:
+    form_finder = 'FORM_NO_3_NOTICE.docx'
