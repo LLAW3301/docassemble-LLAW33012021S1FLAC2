@@ -67,13 +67,15 @@ fields:
   - What is your postal address?: a_postaladdress
     show if: 
       variable: a_postalsame
-      is: 'Yes'
+      is: 'No'
   - What is your Neighbour's Name?: n_name
   - What is your Neighbour's Address?: n_address
   - note: |
       ### Details of Fencing Work:
   - What will the length of the fence be?: f_length
+    datatype: integer
   - What will the height of the fence be?: f_height
+    datatype: integer
   - What material will the fence be made out of?: f_material
     hint: E.g. Colorbond, timber, Zincalume, tubular, chain wire
   - What colour will the fence be?: f_colour
@@ -89,6 +91,7 @@ fields:
   - What earthworks will be required? (If not applicable, write 'not               applicable'): f_earthworks
     hint: e.g. Retaining walls, use of jackhammers etc.
   - What is the cost of the fencing work: f_cost
+    datatype: integer
   - Who will be undertaking the fencing work: f_contractor
     hint: e.g. What is the fencing contractor's name and/or company name
   - What is the address of the person / company undertaking the fencing work:       f_contractoraddress
@@ -103,3 +106,6 @@ fields:
   - Paticulars of objection: p_objection
   - Counter proposals: c_proposals
 ---
+code: |
+  if a_postalsame == 'Yes':
+    a_postaladdress = a_address

@@ -45,6 +45,9 @@ subquestion: |
   % else:
   ${o_name}
   % endif
+  
+attachment code: |
+  [form2]
 buttons:
   - Exit: exit
   - Restart: restart
@@ -97,3 +100,12 @@ buttons:
   - Exit: exit
   - Restart: restart
 ---
+
+---
+attachment: 
+  - name: SACAT Homelessness Advisory App
+    filename: Result Printout
+    valid formats:
+      - pdf
+    docx template file: FORM_NO_2_NOTICE.docx
+    variable name: form2
