@@ -45,7 +45,7 @@ subquestion: |
   % else:
   ${o_name}
   % endif
-  
+
 attachment code: |
   [form]
 buttons:
@@ -92,15 +92,23 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['FN_cannotHelp']
-question: "Sorry, but our application cannot help"
+question: "Sorry, This Application Cannot Help"
 subquestion: |
+  Your fencing matter is a bit more complicated than this App can help with.
 
+
+
+  However, you can book a free appointment with the Flinders Legal Centre to discuss your fencing matter and find a solution.
+
+
+
+
+
+  Book your FREE Appointment [here].(https://www.flinderslegalcentre.net.au/dir/)
 
 buttons:
   - Exit: exit
   - Restart: restart
----
-
 ---
 attachment: 
   - name: SACAT Homelessness Advisory App
