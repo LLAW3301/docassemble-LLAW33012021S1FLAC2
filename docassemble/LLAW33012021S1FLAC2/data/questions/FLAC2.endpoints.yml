@@ -27,6 +27,7 @@ buttons:
   - Exit: exit
   - Restart: restart
 ---
+# This is the main endpoint with a downloadable form
 event: endpoints['Formal_Notice']
 question: "Please download your PDF documents."
 subquestion: |
@@ -114,6 +115,7 @@ attachment:
         form_finder
     variable name: form
 ---
+# This bit of code determines which form the user needs to fill out by checking   which button they clicked
 code: |
   if FN_issue == 'FN_you':
     form_finder = 'FORM_NO_2_NOTICE.docx'
