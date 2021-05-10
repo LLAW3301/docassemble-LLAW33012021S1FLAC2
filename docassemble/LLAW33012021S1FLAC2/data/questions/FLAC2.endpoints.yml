@@ -41,13 +41,10 @@ subquestion: |
   You can contact the Flinders Legal Centre [here](https://www.flinderslegalcentre.net.au/dir/).
   
   % if FN_issue == 'FN_you':
-  ${form2.pdf}
+  ${a_name}
   % else:
   ${o_name}
   % endif
-  
-attachment code: |
-  [form2]
 buttons:
   - Exit: exit
   - Restart: restart
@@ -92,15 +89,23 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['FN_cannotHelp']
-question: "Sorry, but our application cannot help"
+question: "Sorry, This Application Cannot Help"
 subquestion: |
+  Your fencing matter is a bit more complicated than this App can help with.
 
+
+
+  However, you can book a free appointment with the Flinders Legal Centre to discuss your fencing matter and find a solution.
+
+
+
+
+
+  Book your FREE Appointment [here].(https://www.flinderslegalcentre.net.au/dir/)
 
 buttons:
   - Exit: exit
   - Restart: restart
----
-
 ---
 attachment: 
   - name: SACAT Homelessness Advisory App

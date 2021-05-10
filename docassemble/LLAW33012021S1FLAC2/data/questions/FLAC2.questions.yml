@@ -20,13 +20,16 @@ fields:
 # Formal Notice 2 split endpoint question 
 question: "Formal Notice" 
 subquestion: |
-  DO YOU
+  If informal discussions with your neighbour have not worked, then providing a formal notice may be appropriate. Please select the statement that most applies to you.
+  
 fields: 
   - no label: FN_issue
     datatype: radio
     choices:
-     - "Want to replace your Fence with a new one even though the existing one           is not broken": FN_you
-     - "Not agree to your neighbours Form 2 Notice of intention to replace the           existing fence": FN_neighbours
+     - "**I want to replace my fence with a new one even though the existing           one is not broken**": FN_you
+     - "**I have received a Formal Notice of Intention to perform fencing work           from my neighbour and I do not agree with it**": FN_neighbours
+under: |
+  If neither of the statements apply to you then unfortunately this           application cannot assist you. However, you can contact the Flinders            Legal Centre for assistance [here](https://www.flinderslegalcentre.net.au/dir/).               
 ---
 # Below questions are used to determine eligibility to fill out a form
 question: |
@@ -109,3 +112,56 @@ fields:
 code: |
   if a_postalsame == 'Yes':
     a_postaladdress = a_address
+---
+question: "I want to replace my fence with a new one even though the existing one is not broken"
+subquestion: |
+  By completing, signing and providing your neighbour with a Formal Notice, it allows you to obtain your neighbour's consent for the work and have them pay for half of the cost of the new fence.
+
+
+
+  If you do not hear back from neighbour after 30 days since serving them with the Formal Notice, then your neighbour is deemed to have agreed to fencing work and it can begin.
+
+
+
+  To legally force your neighbour to pay for half of the fencing costs, you must go through this Formal Notice process.
+
+
+
+  If you are eligible, we can generate a Formal Notice for you.
+
+  Click below to proceed.
+field: FN1_continue
+buttons:
+  Proceed with Eligibility Questions: continue
+action buttons:
+  - label: Exit
+    action: https://www.flinders.edu.au/
+    color: danger
+---
+question: "I have received a Formal Notice of Intention to perform fencing work from my neighbour and I do not agree with it"
+subquestion: |
+  If you do not complete a Cross-notice detailing your objections and serve it on your neighbour within 30 days from receiving it, then you will be deemed to have agreed to the work and you can be legally forced to pay half the cost of the fencing work.
+
+
+
+  If you are eligible, we can assist with generating a Cross-notice.
+
+  Click below to proceed.
+field: FN2_continue
+buttons:
+  Proceed with Eligibility Questions: continue
+action buttons:
+  - label: Exit
+    action: https://www.flinders.edu.au/
+    color: danger
+--- 
+question: "You are eligible!"
+subquestion: |
+  We now just need to ask you a few questions to help generate the Formal Notice.
+field: FN3_continue
+buttons:
+  Continue: continue
+action buttons:
+  - label: Exit
+    action: https://www.flinders.edu.au/
+    color: danger
