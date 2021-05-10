@@ -57,17 +57,42 @@ yesno: FN_tenant
 question: |
   Form No. 2 Notice
 fields:
-  - Applicants Name: a_name
-  - Applicants Address: a_address
-  - Description of Applicants Land: a_land
-  - Description of Joint Land: j_land
-  - Describe the nature of proposed fencing work: f_work
-  - State the cost of proposed fencing work: c_work
-  - State amount neighbour will have to pay: n_pay
+  - What is your Full Name? : a_name
+  - What is the address of your property where the fencing work is to be            undertaken? : a_address
+  - Is your postal address the same?: a_postalsame
+    datatype: radio
+    choices:
+      - Yes
+      - No
+  - What is your postal address?: a_postaladdress
+    show if: 
+      variable: a_postalsame
+      is: 'Yes'
+  - What is your Neighbour's Name?: n_name
+  - What is your Neighbour's Address?: n_address
   - note: |
-      #### Fences Contractor
-  - Name: fc_name 
-  - Address: fc_address
+      ### Details of Fencing Work:
+  - What will the length of the fence be?: f_length
+  - What will the height of the fence be?: f_height
+  - What material will the fence be made out of?: f_material
+    hint: E.g. Colorbond, timber, Zincalume, tubular, chain wire
+  - What colour will the fence be?: f_colour
+  - Describe the fence's framing: f_framing
+    hint: E.g. Steel posts and rails, "Good Neighbour" fencing.
+  - Will the fence be: f_capping
+    datatype: radio
+    choices:
+      - Capped
+      - Uncapped
+  - Describe where the fence will be positioned: f_position
+    hint: E.g. Along the southern boundary of my property (back fence)
+  - What earthworks will be required? (If not applicable, write 'not               applicable'): f_earthworks
+    hint: e.g. Retaining walls, use of jackhammers etc.
+  - What is the cost of the fencing work: f_cost
+  - Who will be undertaking the fencing work: f_contractor
+    hint: e.g. What is the fencing contractor's name and/or company name
+  - What is the address of the person / company undertaking the fencing work:       f_contractoraddress
+  - Include any other relevant details: f_details
 ---
 #Form 3 
 question: |
