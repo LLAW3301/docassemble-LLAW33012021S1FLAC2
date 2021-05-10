@@ -51,7 +51,7 @@ question: "Mediation & Court"
 subquestion: |
   If the fencing dispute cannot be resolved by informal discussions, then the parties may be able to resolve their dispute by mediation and going to Court. 
 
-  Mediation is cheaper than going to Court, and is usually recommended before the matter is taken to Court. Mediation can be arranged by contacting the [Community Mediation Services](https://www.unitingcommunities.org/service/legal-services/mediation). They act as an independent third party and can help the parties reach an agreement. Note that both parties need to attend the mediation process, but attendance is voluntary. The process can take a few hours depending on the nature of the dispute. Mediation is confidential and anything that is said or written during Mediation cannot be used in Court. Any agreement that is reached in Mediation is not legally binding, but the parties can ask to have the written proceedings be used as evidence in further proceedings (https://www.unitingcommunities.org/service/legal-services/mediation). 
+  Mediation is cheaper than going to Court, and is usually recommended before the matter is taken to Court. Mediation can be arranged by contacting the [Community Mediation Services](https://www.unitingcommunities.org/service/legal-services/mediation). They act as an independent third party and can help the parties reach an agreement. Note that both parties need to attend the mediation process, but attendance is voluntary. The process can take a few hours depending on the nature of the dispute. Mediation is confidential and anything that is said or written during Mediation cannot be used in Court. Any agreement that is reached in Mediation is not legally binding, but the parties can ask to have the written proceedings be used as evidence in further proceedings. 
 
   If the fencing dispute cannot be resolved by Mediation (or if the parties are not willing to mediate) then the matter can be taken to Court. Generally, the matter will be heard in the Minor Civil Claims Division of the Magistrates Court, where parties represent themselves unless both agree to have lawyers present **[***__Magistrates Court Act 1991__*** (SA) s 38(4)]**. A Form 2A Originating Application-Fences Act should be used, with a supporting affidavit. These documents can be found [here](http://www.courts.sa.gov.au/ForLawyers/Pages/UniformCivilForms-Current.aspx).  
 
@@ -105,7 +105,7 @@ buttons:
   - Restart: restart
 ---
 attachment: 
-  - name: SACAT Homelessness Advisory App
+  - name: Notice Document
     filename: Result Printout
     valid formats:
       - pdf
