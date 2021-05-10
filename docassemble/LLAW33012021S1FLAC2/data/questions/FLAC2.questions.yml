@@ -98,11 +98,11 @@ fields:
     hint: E.g. Along the southern boundary of my property (back fence)
   - What earthworks will be required? (If not applicable, write 'not               applicable'): f_earthworks
     hint: e.g. Retaining walls, use of jackhammers etc.
-  - What is the cost of the fencing work: f_cost
+  - What is the cost of the fencing work?: f_cost
     datatype: integer
-  - Who will be undertaking the fencing work: f_contractor
+  - Who will be undertaking the fencing work?: f_contractor
     hint: e.g. What is the fencing contractor's name and/or company name
-  - What is the address of the person / company undertaking the fencing work:       f_contractoraddress
+  - What is the address of the person / company undertaking the fencing work?:       f_contractoraddress
   - Include any other relevant details: f_details
 ---
 # this bit of code checks whether the users postal address is the same as their   home address and if so saves it to a_address to be entered into form 2
@@ -114,7 +114,7 @@ code: |
 question: |
   Form No. 3 Cross-Notice
 fields:
-  - What is your Full Name: o_name
+  - What is your Full Name?: o_name
   - Date of Original Notice from neighbour: o_notice
   - Paticulars of objection: p_objection
   - Counter proposals: c_proposals
