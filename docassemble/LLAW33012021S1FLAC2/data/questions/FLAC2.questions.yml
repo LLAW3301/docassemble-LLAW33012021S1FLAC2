@@ -56,7 +56,7 @@ question: |
   Are you a tenant?
 yesno: FN_tenant
 --- 
-#Form 2 could split this up
+#This block includes the first questions for form 2
 question: |
   Form No. 2 Notice
 fields:
@@ -73,8 +73,12 @@ fields:
       is: 'No'
   - What is your Neighbour's Name?: n_name
   - What is your Neighbour's Address?: n_address
-  - note: |
+---
+question: |
+  Form No. 2 Notice Continued
+subquestion: |
       ### Details of Fencing Work:
+fields:
   - What will the length of the fence be?: f_length
     datatype: integer
   - What will the height of the fence be?: f_height

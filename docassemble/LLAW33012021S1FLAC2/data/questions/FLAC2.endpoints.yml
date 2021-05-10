@@ -39,12 +39,6 @@ subquestion: |
    
 
   You can contact the Flinders Legal Centre [here](https://www.flinderslegalcentre.net.au/dir/).
-  
-  % if FN_issue == 'FN_you':
-  ${a_name}
-  % else:
-  ${o_name}
-  % endif
 
 attachment code: |
   [form]
@@ -104,7 +98,7 @@ subquestion: |
 
 
 
-  Book your FREE Appointment [here].(https://www.flinderslegalcentre.net.au/dir/)
+  Book your FREE Appointment [here](https://www.flinderslegalcentre.net.au/dir/).
 
 buttons:
   - Exit: exit
