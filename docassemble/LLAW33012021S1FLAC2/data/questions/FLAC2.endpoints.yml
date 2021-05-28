@@ -6,21 +6,23 @@ objects:
 event: endpoints['Informal_Amicable_Discussions']
 question: "Informal Amicable Discussions"
 subquestion: |
-  Have you contacted your neighbour about the replacement? 
+  When building a new fence or replacing an existing one, the first step is to talk to your neighbour.  
 
-   
+ 
 
-  It will not be necessary for you to proceed if you and your neighbour reach an agreement. Verbal agreements are useful. However, written agreements are preferable. 
+  Discuss with them your thoughts and plans for the fence. Try to work with your neighbour to reach an amicable agreement.  
 
-   
+ 
 
-  You may use this [Sample Fencing Agreement template](https://lawhandbook.sa.gov.au/ch31s02s01.php). 
+  However, once you reach an agreement, it is best to put it in writing. You may use this free Sample Fencing Agreement template.  
 
-   
+ 
 
-  The Flinders Legal Centre can review your agreement before it is finalised. 
+  Additionally, the Flinders Legal Centre can review your agreement before it is finalised.  
 
-  You can book an appointment with them 
+ 
+
+  You can book an online appointment with them 
   [here](https://www.flinderslegalcentre.net.au/dir/home/appointments/). 
 
 buttons:
@@ -29,13 +31,17 @@ buttons:
 ---
 # This is the main endpoint with a downloadable form
 event: endpoints['Formal_Notice']
-question: "Please download your PDF documents."
+question: "Download your Notice"
 subquestion: |
-  Please note that you cannot email Notice to your neighbour. Notice must be given in person. Your neighbour may be deemed to have agreed to your proposal if 30 days have passed since you provided Notice or Cross-notice and your neighbour has not served notice of his objection. 
+  When serving your neighbour with the Notice, please remember that you cannot email it to them, it must be given to them personally or by registered post.  
 
-   
+ 
 
-  You may need to attend mediation or go to court if you and your neighbour cannot reach an agreement.  
+  If you and your neighbour cannot reach an agreement, then you may need to attend mediation or go to court.  
+
+ 
+
+  You can book a free appointment with the Flinders Legal Centre to discuss your matter here
 
    
 
@@ -87,7 +93,7 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['FN_cannotHelp']
-question: "Sorry, This Application Cannot Help"
+question: "Sorry, This PiCKeT Cannot Help"
 subquestion: |
   Your fencing matter is a bit more complicated than this App can help with.
 
@@ -110,6 +116,7 @@ attachment:
     filename: Result Printout
     valid formats:
       - pdf
+      - docx
     docx template file: 
       code: |
         form_finder

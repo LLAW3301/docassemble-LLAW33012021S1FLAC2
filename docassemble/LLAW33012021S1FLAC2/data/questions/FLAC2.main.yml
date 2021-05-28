@@ -28,16 +28,20 @@ include:
 ---
 # This block is the welcome screen
 mandatory: True
-question: ""
+question: "PiCKeT – SA’s Legal Fencing App"
 subquestion: |
-  Welcome to the Flinders Legal Centre (FLC) Fencing Application. This app will  help you with your fencing dispute, and will also guide you to services         available which may help you resolve your dispute.  
+  Welcome to PiCKeT!  
 
-  The FLC is a legal clinic that provides free legal advice to clients. You can  make an appointment to consult student interns or recent graduates (who are     supervised by an experienced solicitor). 
+  Your legal guide to all things Fencing in South Australia, created by the Flinders Legal Centre (FLC). Whether Building a New Fence, or Replacing an Old Fence, PiCKeT can guide you through the legal process. However, if it cannot help, then the FLC can! The FLC can provide free legal advice around your fencing matter.  
 
-  Please note the FLC only provides advice where matters do not exceed the sum    of $12,000, and helps clients with understanding the law, providing             appropriate options to resolve disputes, and helping clients with Court         procedures and preparing appropriate documents if the matter is going before a   Court, or is already in Court. 
+  Disclaimer: 
+  By clicking ‘I agree and wish to continue’, you agree to the following terms: 
 
-  ***Disclaimer:***   
-  The information provided by this application applies only to properties in      South Australia. This application does not provide legal advice. Clicking       "I agree" does not mean you are entering any sort of contract (legal or          otherwise) with the FLC. You are agreeing to the terms of this disclaimer by     clicking "I agree". If you do not agree, you must exit this application.
+  The information provided by PiCKeT only applies to properties located within South Australia; 
+
+  PiCKeT provides legal information and not legal advice; and 
+
+  No client-solicitor relationship is created through using PiCKeT
 buttons:
   - I agree and wish to continue: continue
   - I do not agree and wish to exit: exit
