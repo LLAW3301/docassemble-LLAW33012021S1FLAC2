@@ -4,26 +4,26 @@ objects:
   - endpoints: DADict
 ---
 event: endpoints['Informal_Amicable_Discussions']
-question: "Informal Amicable Discussions"
+question: "Fencing Agreements"
 subquestion: |
-  When building a new fence or replacing an existing one, the first step is to talk to your neighbour.  
+  Has the neighbour been notified about the replacement? 
 
  
 
-  Discuss with them your thoughts and plans for the fence. Try to work with your neighbour to reach an amicable agreement.  
+  It will not be necessary to proceed if both neighbours have reached an agreement.  
 
  
 
-  However, once you reach an agreement, it is best to put it in writing. You may use this free Sample Fencing Agreement template.  
+  Written agreements are preferred. 
+
+  Follow this link and scroll down for a Sample Fencing Agreement template: [Link to Sample Template](https://lawhandbook.sa.gov.au/ch31s02s01.php)
 
  
 
-  Additionally, the Flinders Legal Centre can review your agreement before it is finalised.  
+  The Flinders Legal Centre can review agreements before they are finalised. 
 
- 
-
-  You can book an online appointment with them 
-  [here](https://www.flinderslegalcentre.net.au/dir/home/appointments/). 
+  Follow this link to book an appointment with the Flinders Legal Clinic: 
+  [Link to Flinders Legal Centre](https://www.flinderslegalcentre.net.au/dir/home/appointments/)
 
 buttons:
   - Exit: exit
@@ -33,19 +33,27 @@ buttons:
 event: endpoints['Formal_Notice']
 question: "Download your Notice"
 subquestion: |
-  When serving your neighbour with the Notice, please remember that you cannot email it to them, it must be given to them personally or by registered post.  
+  Here is your Form 2 
 
  
 
-  If you and your neighbour cannot reach an agreement, then you may need to attend mediation or go to court.  
+  These are the next steps: 
 
  
 
-  You can book a free appointment with the Flinders Legal Centre to discuss your matter here
+  1. Provide Notice to the neighbour.  
 
-   
+  Give the Form 2 to the adjoining neighbour. Please note that Notice cannot be sent via email. Notice must be given in person. 
 
-  You can contact the Flinders Legal Centre [here](https://www.flinderslegalcentre.net.au/dir/).
+  The neighbour may be deemed to have agreed if: 30 days have passed since Notice or Cross-notice was given and the neighbour has not served Notice of his/her/their objection. 
+
+ 
+
+  2. The neighbour may object with Cross-notice (also known as Form 3). 
+
+ 
+
+  3. If an agreement cannot be reached between neighbours, mediation or court may be necessary. Please follow the link to contact the Flinders Legal Centre: [Link to Flinders Legal Centre](https://www.flinderslegalcentre.net.au/dir/) 
 
 attachment code: |
   [form]

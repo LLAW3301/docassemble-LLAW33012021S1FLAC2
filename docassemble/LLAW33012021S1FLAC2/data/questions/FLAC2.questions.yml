@@ -42,6 +42,8 @@ yesno: FN_30days
 ---
 question: |
   Does your land adjoin Crown or Council Land?
+subquestion: |
+  Crown or Council land is land that is owned and by the State or Commonwealth Government. This may include parks, beaches, heritage sites, community halls, war memorials, cemeteries and walking tracks.
 yesno: FN_adjoin
 ---
 question: |
