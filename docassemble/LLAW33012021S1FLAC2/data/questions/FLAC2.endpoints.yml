@@ -24,7 +24,7 @@ buttons:
 event: endpoints['Formal_Notice']
 question: "Download your Notice"
 subquestion: |
-  ## **Here is your Formal Notice!**
+  ### **Here is your Formal Notice!**
 
    These are the next steps in the Process:  
 
@@ -103,7 +103,7 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['FN_cannotHelp']
-question: "This is a complex situation. Please contact the FLC"
+question: "This is a complex situation"
 subquestion: |
   Your fencing matter is a bit more complicated than this App can help with.
 

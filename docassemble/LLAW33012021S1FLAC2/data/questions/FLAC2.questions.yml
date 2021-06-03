@@ -61,7 +61,7 @@ yesno: FN_strata
 ---
 question: |
   Do you know your Neighbour's main residential or postal address?
-yesno: FN_adjoinOwner
+noyes: FN_adjoinOwner
 ---
 question: |
   Are you a tenant?
@@ -135,6 +135,7 @@ fields:
   - Include any other relevant details: f_details
     input type: area
     default: None
+    required: False
 ---
 # this bit of code checks whether the users postal address is the same as their   home address and if so saves it to a_address to be entered into form 2
 code: |
