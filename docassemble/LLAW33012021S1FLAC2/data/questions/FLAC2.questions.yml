@@ -149,6 +149,7 @@ fields:
   - What is your Full Name?: o_name
     default: Peter Rogers
   - Date of Original Notice from neighbour: o_notice
+    datatype: date
     default: 3 May 2021
   - Paticulars of objection: p_objection
     hint: What do you not agree with in your Neighbour's Notice? 
