@@ -2,25 +2,32 @@
 # this is the first question page (homepage)
 question: "Where Do You Sit on the Fence?" 
 subquestion: |
-  Any disputes involving fencing in South Australia can be broken down into three stages as detailed below. 
+  Most disputes involving fencing in South Australia can be broken down into three stages as detailed below. 
 
-  **1. Informal Amicable Discussions:** This is where you can agree with your neighbour that there may not be any need for formal legal documents, except a written contractual agreement. Please select the "Informal Amicable Discussions" from the choices below to get more information about this process. 
+  **1. Talk to your Neighbour:** 
+  
+  You should start by talking to your neighbour about the fencing matter. Please select "Talk to your Neighbour" below to get more information, including a Fencing Agreement Template. 
 
-  **2. Formal Notice:** Please select "Formal Notice" below to get more information about this process. 
-
-  **3. Mediation and Court:** This is applicable when you are not able to resolve the dispute and require mediation or a court order to resolve the dispute. Please select "Mediation and Court" from the choices below for more information. 
+  **2. Legal Fencing Process:** 
+  
+  If you and your neighbour cannot come to an amicable agreement, you may have to go through the Legal Fencing Process. 
+  
+  **3. Mediation and Court:** 
+  
+  If your fencing dispute cannot be resolved, you may have to attend Mediation or Court. Please select "Mediation and Court" below for more informaton and assistance. 
+  
 fields: 
   - no label: fencing_process
     datatype: radio
     choices:
-     - "Informal Amicable Discussion": IAD
-     - "Formal Notice": FN
+     - "Talk to your Neighbour": IAD
+     - "Legal Fencing Process": FN
      - "Mediation & Court": M&C
 ---
 # Formal Notice 2 split endpoint question 
-question: "Formal Notice Process" 
+question: "Legal Fencing Process" 
 subquestion: |
-  If informal discussions with your neighbour have not worked, then providing a formal notice may be appropriate. Please select the statement that most applies to you.
+  If talking to your neighbour did not work, then providing a formal notice may be appropriate. Please select the statement that most applies to you.
   
 fields: 
   - no label: FN_issue
@@ -33,7 +40,7 @@ under: |
 ---
 # Below questions are used to determine eligibility to fill out a form
 question: |
-  Do you know the identity of your neighbour?
+  Do you know who your Neighbour is?
 noyes: FN_identity
 ---
 question: |
@@ -43,15 +50,17 @@ yesno: FN_30days
 question: |
   Does your land adjoin Crown or Council Land?
 subquestion: |
-  Crown or Council land is land that is owned and by the State or Commonwealth Government. This may include parks, beaches, heritage sites, community halls, war memorials, cemeteries and walking tracks.
+  Crown or Council land is land that is owned and by the State Government or a Local Council. This may include parks, beaches, heritage sites, community halls, war memorials, cemeteries and walking tracks.
 yesno: FN_adjoin
 ---
 question: |
-  Is your property within Strata Units?
+  Is your property within a Strata Unit?
+Subquestion: |
+  Most apartments, units and townhouses are Strata Units. 
 yesno: FN_strata
 ---
 question: |
-  Is the whereabouts of the adjoining owner unknown?
+  Do you know your Neighbour's main residential or postal address?
 yesno: FN_adjoinOwner
 ---
 question: |
@@ -98,8 +107,8 @@ fields:
       - Uncapped
   - Describe where the fence will be positioned: f_position
     hint: E.g. Along the southern boundary of my property (back fence)
-  - What earthworks will be required? (If not applicable, write 'not               applicable'): f_earthworks
-    hint: e.g. Retaining walls, use of jackhammers etc.
+  - What works will be required? (If not applicable, write 'none'): f_earthworks
+    hint: e.g. Earthworks, tree removal, retaining walls etc.
   - What is the cost of the fencing work?: f_cost
     datatype: currency
   - Who will be undertaking the fencing work?: f_contractor
@@ -121,26 +130,28 @@ fields:
   - What is your Full Name?: o_name
   - Date of Original Notice from neighbour: o_notice
   - Paticulars of objection: p_objection
+    hint: What do you not agree with in your Neighbour's Notice? 
     input type: area
   - Counter proposals: c_proposals
+    hint: List your counter proposals to your Neighbour's Notice. 
     input type: area
 ---
 # this question block further explains the process of the button they just       clicked 
 question: "I want to replace my fence with a new one even though the existing one is not broken"
 subquestion: |
-  By completing, signing and providing your neighbour with a Formal Notice, it allows you to obtain your neighbour's consent for the work and have them pay for half of the cost of the new fence.
-
+  By providing your neighbour with a **Formal Notice** :
+  
+  * You can obtain your neighbour's consent for the work; and 
+  * have them pay for half of the cost of the new fence.
 
 
   If you do not hear back from neighbour after 30 days since serving them with the Formal Notice, then your neighbour is deemed to have agreed to fencing work and it can begin.
 
 
-
   To legally force your neighbour to pay for half of the fencing costs, you must go through this Formal Notice process.
 
 
-
-  If you are eligible, we can generate a Formal Notice for you.
+  If you are **eligible**, we can generate a Formal Notice for you.
 
   Click below to proceed.
 field: FN1_continue
@@ -154,11 +165,11 @@ action buttons:
 # this question block further explains the process of the button they just       clicked 
 question: "I have received a Formal Notice of Intention to perform fencing work from my neighbour and I do not agree with it"
 subquestion: |
-  If you do not agree with any aspect of the Formal Notice from your neighbour then you must complete a Cross-notice.  
+  If you **do not agree** with any aspect of the Formal Notice from your neighbour then you must complete a Cross-notice.  
 
   The Cross-notice must be completed and served on your neighbour within 30 days of receiving the Formal Notice. If you do not serve the Cross-notice within 30 days, then you will be deemed to have agreed to the fencing proposal and can be legally forced to pay half the cost of the work.  
 
-  If you satisfy the following eligibility questions, then we can assist you with generation a Cross-notice. 
+  If you satisfy the following **eligibility questions**, then we can assist you with generation a Cross-notice. 
 
   Click below to proceed.
 field: FN2_continue
@@ -172,7 +183,7 @@ action buttons:
 # this block lets the user know they are eligible to complete a formal notice
 question: "You are eligible!"
 subquestion: |
-  We now just need to ask you a few questions to help generate your document
+  We now just need to ask you a few questions to help generate your document!
 field: FN3_continue
 buttons:
   Continue: continue

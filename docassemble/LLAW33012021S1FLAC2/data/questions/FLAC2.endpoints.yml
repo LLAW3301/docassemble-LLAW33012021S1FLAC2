@@ -4,27 +4,20 @@ objects:
   - endpoints: DADict
 ---
 event: endpoints['Informal_Amicable_Discussions']
-question: "Fencing Agreements"
+question: "Talk to your Neighbour"
 subquestion: |
-  Has the neighbour been notified about the replacement? 
+  ### Have you talked to your Neighbour?
+  
+  You should start by talking to your neighbour about your fencing matter. 
 
- 
-
-  It will not be necessary to proceed if both neighbours have reached an agreement.  
-
- 
-
-  Written agreements are preferred. 
-
-  Follow this link and scroll down for a Sample Fencing Agreement template: [Link to Sample Template](https://lawhandbook.sa.gov.au/ch31s02s01.php)
-
- 
-
+  Reaching an amicable resolution with your neighbour can save a lot of time, money and stress! 
+  
+  It is always best to put your agreements in writing. Follow this link and scroll down for a Sample Fencing Agreement template: [Link to Sample Template](https://lawhandbook.sa.gov.au/ch31s02s01.php)
+  
   The Flinders Legal Centre can review agreements before they are finalised. 
 
-  Follow this link to book an appointment with the Flinders Legal Clinic: 
-  [Link to Flinders Legal Centre](https://www.flinderslegalcentre.net.au/dir/home/appointments/)
-
+  Click [here] (https://www.flinderslegalcentre.net.au/dir/home/appointments/) to book an appointment with the Flinders Legal Clinic.
+  
 buttons:
   - Exit: exit
   - Restart: restart
@@ -33,27 +26,26 @@ buttons:
 event: endpoints['Formal_Notice']
 question: "Download your Notice"
 subquestion: |
-  Here is your Form 2 
+  ## **Here is your Formal Notice!**
 
- 
+   These are the next steps in the Process:  
 
-  These are the next steps: 
+  **1. Provide Notice to the neighbour:**
 
- 
+  * Give the Formal Notice to your neighbour in person; or 
+  * Post it to them via Registered Post.
+  
+  **2. Your neighbour may be deemed to have agreed to your Formal Notice if:**
+  
+  * 30 days have passed since the Formal Notice was given and the neighbour has not served a Cross-notice on you.  
 
-  1. Provide Notice to the neighbour.  
+  **3. Or, your neighbour may object to your formal notice by serving a Cross-notice on you.** 
+  
+  **4. The serving of Cross-notices can go back and forward until an agreement is reached** 
 
-  Give the Form 2 to the adjoining neighbour. Please note that Notice cannot be sent via email. Notice must be given in person. 
-
-  The neighbour may be deemed to have agreed if: 30 days have passed since Notice or Cross-notice was given and the neighbour has not served Notice of his/her/their objection. 
-
- 
-
-  2. The neighbour may object with Cross-notice (also known as Form 3). 
-
- 
-
-  3. If an agreement cannot be reached between neighbours, mediation or court may be necessary. Please follow the link to contact the Flinders Legal Centre: [Link to Flinders Legal Centre](https://www.flinderslegalcentre.net.au/dir/) 
+  **5. If an agreement cannot be reached, Mediation or Court may be necessary.**
+  
+  If you need assistance with any part of the fencing process, please contact the Flinders Legal Centre for ***FREE*** assistance with your matter: [Click Here](https://www.flinderslegalcentre.net.au/dir/) 
 
 attachment code: |
   [form]
@@ -101,17 +93,11 @@ buttons:
   - Restart: restart
 ---
 event: endpoints['FN_cannotHelp']
-question: "Sorry, This PiCKeT Cannot Help"
+question: "Sorry, PiCKeT Cannot Help"
 subquestion: |
   Your fencing matter is a bit more complicated than this App can help with.
 
-
-
   However, you can book a free appointment with the Flinders Legal Centre to discuss your fencing matter and find a solution.
-
-
-
-
 
   Book your FREE Appointment [here](https://www.flinderslegalcentre.net.au/dir/).
 

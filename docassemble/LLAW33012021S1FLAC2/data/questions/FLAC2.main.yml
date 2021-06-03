@@ -30,18 +30,21 @@ include:
 mandatory: True
 question: "PiCKeT – SA’s Legal Fencing App"
 subquestion: |
-  Welcome to PiCKeT!  
+  ## Welcome to PiCKeT!  
 
-  Your legal guide to all things Fencing in South Australia, created by the Flinders Legal Centre (FLC). Whether Building a New Fence, or Replacing an Old Fence, PiCKeT can guide you through the legal process. However, if it cannot help, then the FLC can! The FLC can provide free legal advice around your fencing matter.  
+  Your legal guide to all things Fencing in South Australia, created by the Flinders Legal Centre (FLC). 
+  
+  Whether Building a New Fence, or Replacing an Old Fence, PiCKeT can guide you through the legal process. However, if it cannot help, then the FLC can! The FLC can provide free legal advice around your fencing matter.  
 
-  Disclaimer: 
+  *** Disclaimer: *** 
+  
   By clicking ‘I agree and wish to continue’, you agree to the following terms: 
 
-  The information provided by PiCKeT only applies to properties located within South Australia; 
+  * The information provided by PiCKeT only applies to properties located within South Australia; 
 
-  PiCKeT provides legal information and not legal advice; and 
+  * PiCKeT provides legal information and not legal advice; and 
 
-  No client-solicitor relationship is created through using PiCKeT
+  * No client-solicitor relationship is created through using PiCKeT
 buttons:
   - I agree and wish to continue: continue
   - I do not agree and wish to exit: exit
