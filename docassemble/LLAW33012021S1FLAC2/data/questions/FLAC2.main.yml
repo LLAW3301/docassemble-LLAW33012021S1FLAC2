@@ -19,8 +19,6 @@ metadata:
     - name: Lewis Suttie
       organisation: Flinders University
 ---
-# Modify the post default screen part to attribute work to Flinders and your client
-# Remember to replace XXXX with your client's name.
 default screen parts:
   post: |
     <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
@@ -35,6 +33,7 @@ default screen parts:
 ---
 # Remove debugging and logging in features
 features:
+  css: FLAC2.css
   debug: False
   hide standard menu: True
 ---
@@ -44,10 +43,8 @@ include:
 ---
 # This block is the welcome screen
 mandatory: True
-question: "PiCKeT – SA’s Legal Fencing App"
+question: "Welcome to PiCKeT!"
 subquestion: |
-  ## Welcome to PiCKeT!  
-
   Your legal guide to all things Fencing in South Australia, created by the Flinders Legal Centre (FLC). 
   
   Whether Building a New Fence, or Replacing an Old Fence, PiCKeT can guide you through the legal process. However, if it cannot help, then the FLC can! The FLC can provide free legal advice around your fencing matter.  

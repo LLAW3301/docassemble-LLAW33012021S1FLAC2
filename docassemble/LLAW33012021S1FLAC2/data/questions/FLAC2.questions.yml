@@ -133,7 +133,6 @@ fields:
   - What is the address of the person / company undertaking the fencing work?:       f_contractoraddress
     default: Bob’s Fencing
   - Include any other relevant details: f_details
-    hint: Do we want to put this in the file?
     input type: area
     default: None
 ---
