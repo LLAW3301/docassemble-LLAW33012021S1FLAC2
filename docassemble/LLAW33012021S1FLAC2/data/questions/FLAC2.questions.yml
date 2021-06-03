@@ -61,7 +61,7 @@ yesno: FN_strata
 ---
 question: |
   Do you know your Neighbour's main residential or postal address?
-yesno: FN_adjoinOwner
+noyes: FN_adjoinOwner
 ---
 question: |
   Are you a tenant?
