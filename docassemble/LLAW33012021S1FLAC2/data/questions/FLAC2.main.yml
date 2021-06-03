@@ -1,0 +1,78 @@
+# This is the main file for the FLAC2 App
+---
+metadata:
+  title: |
+    PiCKeT – SA’s Legal Fencing App
+  short title: |
+    PiCKet
+  organisation: Flinders University
+  show login: False
+  authors:
+    - name: Arjun Shivashankaraiah
+      organisation: Flinders University
+    - name: Brayden Mann
+      organisation: Flinders University
+    - name: Daniella De Vonte
+      organisation: Flinders University
+    - name: Liam O'Shaughnessy
+      organisation: Flinders University
+    - name: Lewis Suttie
+      organisation: Flinders University
+---
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right; font-size: 90%;">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with Flinders Legal Centre
+    </i></small></cite>
+    </div>
+    </div>
+---
+# Remove debugging and logging in features
+features:
+  css: FLAC2.css
+  debug: False
+  hide standard menu: True
+---
+include:
+  - FLAC2.endpoints.yml
+  - FLAC2.questions.yml
+---
+# This block is the welcome screen
+mandatory: True
+question: "Welcome to PiCKeT!"
+subquestion: |
+  Your legal guide to all things Fencing in South Australia, created by the Flinders Legal Centre (FLC). 
+  
+  Whether Building a New Fence, or Replacing an Old Fence, PiCKeT can guide you through the legal process. However, if it cannot help, then the FLC can! The FLC can provide free legal advice around your fencing matter.  
+
+  *** Disclaimer: *** 
+  
+  By clicking ‘I agree and wish to continue’, you agree to the following terms: 
+
+  * The information provided by PiCKeT only applies to properties located within South Australia; 
+
+  * PiCKeT provides legal information and not legal advice; and 
+
+  * No client-solicitor relationship is created through using PiCKeT
+buttons:
+  - I agree and wish to continue: continue
+  - I do not agree and wish to exit: exit
+---
+# This code block runs the appliction and determines where to send the user dependant on their responses
+mandatory: True
+code: |
+  if fencing_process == 'IAD':
+    endpoints['Informal_Amicable_Discussions']
+  elif fencing_process == 'FN':
+    if FN_issue == 'FN_neighbours' and FN2_continue and FN_30days or FN_issue ==       'FN_you' and FN1_continue and FN_identity or FN_adjoin or FN_strata or            FN_adjoinOwner or FN_tenant:
+      endpoints['FN_cannotHelp']
+    else:
+      FN3_continue
+      endpoints['Formal_Notice']
+  else:
+    endpoints['Mediation_&_Court']
+---

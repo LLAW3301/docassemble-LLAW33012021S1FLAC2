@@ -1,0 +1,140 @@
+# We keep all the endpoints in this file.
+---
+objects:
+  - endpoints: DADict
+---
+event: endpoints['Informal_Amicable_Discussions']
+question: "Have you talked to your Neighbour?"
+subquestion: |
+  You should start by talking to your neighbour about your fencing matter. 
+
+  Reaching an amicable resolution with your neighbour can save a lot of time, money and stress! 
+  
+  It is always best to put your agreements in writing. Follow this link and scroll down for a Sample Fencing Agreement template: [Link to Sample Template](https://lawhandbook.sa.gov.au/ch31s02s01.php)
+  
+  The Flinders Legal Centre can review agreements before they are finalised. 
+
+  Click [here](https://www.flinderslegalcentre.net.au/dir/home/appointments/) to book an appointment with the Flinders Legal Clinic.
+  
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+# This is the main endpoint with a downloadable form
+event: endpoints['Formal_Notice']
+question: "Download your Notice"
+subquestion: |
+  ### **Here is your Formal Notice!**
+
+   These are the next steps in the Process:  
+
+  **1. Provide Notice to the neighbour:**
+
+  * Give the Formal Notice to your neighbour in person; or 
+  * Post it to them via Registered Post.
+  
+  **2. Your neighbour may be deemed to have agreed to your Formal Notice if:**
+  
+  * 30 days have passed since the Formal Notice was given and the neighbour has not served a Cross-notice on you.  
+
+  **3. Or, your neighbour may object to your formal notice by serving a Cross-notice on you.** 
+  
+  **4. The serving of Cross-notices can go back and forward until an agreement is reached** 
+
+  **5. If an agreement cannot be reached, Mediation or Court may be necessary.**
+  
+  If you need assistance with any part of the fencing process, please contact the Flinders Legal Centre for ***FREE*** assistance with your matter: [Click Here](https://www.flinderslegalcentre.net.au/dir/) 
+
+attachment code: |
+  [form]
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+# This question block is a shortened version of Mediation & Court and may not be the users final endpoint
+question: "Mediation & Court"
+subquestion: |
+  If the fencing dispute cannot be resolved by informal discussions, then the parties may be able to resolve their dispute by mediation and going to Court.  
+
+  You can contact the [Flinders Legal Centre (FLC)](https://www.flinders.edu.au/engage/community/clinics/flinders-legal-centre) for help or if you wish to discuss your dispute in order to determine what options may be available to you. 
+
+  You can also find more information through the Legal Services Commission [here](https://lawhandbook.sa.gov.au/ch31s02.php). 
+  
+  **Click Continue for more information about Mediation & Court.**
+continue button field: more_info
+---
+# This is the enpoint with more information on Mediation & Court
+event: endpoints['Mediation_&_Court']
+question: "Mediation & Court"
+subquestion: |
+  ${hidden_code}
+  
+  Mediation is cheaper than going to Court, and is usually recommended before the matter is taken to Court. Mediation can be arranged by contacting the [Community Mediation Services](https://www.unitingcommunities.org/service/legal-services/mediation). They act as an independent third party and can help the parties reach an agreement. Note that both parties need to attend the mediation process, but attendance is voluntary. The process can take a few hours depending on the nature of the dispute. Mediation is confidential and anything that is said or written during Mediation cannot be used in Court. Any agreement that is reached in Mediation is not legally binding, but the parties can ask to have the written proceedings be used as evidence in further proceedings. 
+
+  If the fencing dispute cannot be resolved by Mediation (or if the parties are not willing to mediate) then the matter can be taken to Court. Generally, the matter will be heard in the Minor Civil Claims Division of the Magistrates Court, where parties represent themselves unless both agree to have lawyers present **[***__Magistrates Court Act 1991__*** (SA) s 38(4)]**. A Form 2A Originating Application-Fences Act should be used, with a supporting affidavit. These documents can be found [here](http://www.courts.sa.gov.au/ForLawyers/Pages/UniformCivilForms-Current.aspx).  
+
+  The Fences Act specifies that ‘a person who is affected by the dispute’ needs to lodge an application to take the matter to Court in order to ‘seek determination of the matter’ **[***__Fences Act 1975__*** (SA) s 12(1) (***__‘Fences Act’__***)]**. 
+
+  The Court has power to make various determinations as set out in __s 12(2) of the__ ***Fences Act***.  Generally, the Court can determine: 
+
+  * If the fence should be replaced 
+
+  * Type of fencing 
+
+  * Location of the fence 
+
+  * The person or persons who can carry out the fencing work 
+
+  * When the work can be carried out 
+
+  * The cost involved with the work and how these costs are to be shared 
+
+  * Entry orders to the properties involved 
+
+  The Court can also determine if the fence is an ‘adequate fence’ and the Court will consider what the standard of good fencing in that particular area is and the purpose for which the adjoining lands are used **[***__Fences Act__*** s 12(8)]**. There is no clear guideline as to what type of fence will be permitted when two neighbours each propose equally meritorious fences. In most cases, the Court will try to get the neighbours to reach agreement. 
+
+  In determining costs, generally the Court will assume that each will get equal benefit from the fence. However if it can be shown that one neighbour will get greater benefit, the Court can order that person to pay more or all of the cost. If an owner cannot afford the amount awarded, the Court can order payment by instalments. If the adjoining owner cannot be found, the Court can make an order in that person's absence **[***__Fences Act 1975__*** (SA) s 9]**. 
+
+  You can also contact the [Flinders Legal Centre (FLC)](https://www.flinders.edu.au/engage/community/clinics/flinders-legal-centre) for help or if you wish to discuss your dispute in order to determine what options may be available to you. 
+
+  You can also find more information through the Legal Services Commission [here](https://lawhandbook.sa.gov.au/ch31s02.php). 
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+event: endpoints['FN_cannotHelp']
+question: "This is a complex situation"
+subquestion: |
+  Your fencing matter is a bit more complicated than this App can help with.
+
+  However, you can book a free appointment with the Flinders Legal Centre to discuss your fencing matter and find a solution.
+
+  Book your FREE Appointment [here](https://www.flinderslegalcentre.net.au/dir/).
+
+buttons:
+  - Exit: exit
+  - Restart: restart
+---
+attachment: 
+  - name: Notice Document
+    filename: Result Printout
+    valid formats:
+      - pdf
+      - docx
+    docx template file: 
+      code: |
+        form_finder
+    variable name: form
+---
+# This bit of code determines which form the user needs to fill out by checking   which button they clicked
+code: |
+  if FN_issue == 'FN_you':
+    form_finder = 'FORM_NO_2_NOTICE.docx'
+  else:
+    form_finder = 'FORM_NO_3_NOTICE.docx'
+---
+# This code block checks if the more_info variable is true and sets the hidden_code variable to be empty
+# This allows us to split the Mediation & Court page up
+code: |
+  more_info
+  hidden_code = ''
