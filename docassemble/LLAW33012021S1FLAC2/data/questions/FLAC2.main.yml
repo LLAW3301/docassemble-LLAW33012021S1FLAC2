@@ -44,7 +44,6 @@ include:
 ---
 # This block is the welcome screen
 mandatory: True
-# Turn debug menu off
 question: "PiCKeT – SA’s Legal Fencing App"
 subquestion: |
   ## Welcome to PiCKeT!  
