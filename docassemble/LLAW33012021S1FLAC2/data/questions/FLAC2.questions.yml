@@ -61,29 +61,35 @@ yesno: FN_strata
 ---
 question: |
   Do you know your Neighbour's main residential or postal address?
-noyes: FN_adjoinOwner
+yesno: FN_adjoinOwner
 ---
 question: |
   Are you a tenant?
 yesno: FN_tenant
 --- 
-#This block includes the first questions for form 2
+# This block includes the first questions for form 2
 question: |
   Form No. 2 Notice
 fields:
   - What is your Full Name? : a_name
+    default: John Smith
   - What is the address of your property where the fencing work is to be            undertaken? : a_address
+    default: 2 Harcourt Avenue, Clovelly Park, SA 5042
   - Is your postal address the same?: a_postalsame
     datatype: radio
     choices:
       - Yes
       - No
+    default: Yes
   - What is your postal address?: a_postaladdress
     show if: 
       variable: a_postalsame
       is: 'No'
+    default: 4 Bond Street, Fulham, SA 5035
   - What is your Neighbour's Name?: n_name
+    default: Peter Rogers
   - What is your Neighbour's Address?: n_address
+    default: 4 Harcourt Avenue, Clovelly Park, SA 5042
 ---
 # this block includes the next set of questions for form 2
 question: |
@@ -92,31 +98,44 @@ subquestion: |
       ### Details of Fencing Work:
 fields:
   - What will the length of the fence be?: f_length
+    default: 15m
   - What will the height of the fence be?: f_height
+    default: 1.6m
   - What material will the fence be made out of?: f_material
     hint: E.g. Colorbond, timber, Zincalume, tubular, chain wire
     input type: area
+    default: Colorbond
   - What colour will the fence be?: f_colour
+    default: Grey
   - Describe the fence's framing: f_framing  
     hint: E.g. Steel posts and rails, "Good Neighbour" fencing.
     input type: area
+    default: Steel posts and rails
   - Will the fence be: f_capping
     datatype: radio
     choices:
       - Capped
       - Uncapped
+    default: Capped
   - Describe where the fence will be positioned: f_position
     hint: E.g. Along the southern boundary of my property (back fence)
+    default: Along western boundary of my property
   - What works will be required? (If not applicable, write 'none'): f_earthworks
     hint: e.g. Earthworks, tree removal, retaining walls etc.
+    default: Shrubs to be removed
   - What is the cost of the fencing work?: f_cost
     datatype: currency
+    default: 800.00
   - Who will be undertaking the fencing work?: f_contractor
     hint: e.g. What is the fencing contractor's name and/or company name
     input type: area
+    default:  Robert Leslie
   - What is the address of the person / company undertaking the fencing work?:       f_contractoraddress
+    default: Bob’s Fencing
   - Include any other relevant details: f_details
     hint: Do we want to put this in the file?
+    input type: area
+    default: None
 ---
 # this bit of code checks whether the users postal address is the same as their   home address and if so saves it to a_address to be entered into form 2
 code: |
@@ -128,13 +147,17 @@ question: |
   Form No. 3 Cross-Notice
 fields:
   - What is your Full Name?: o_name
+    default: Peter Rogers
   - Date of Original Notice from neighbour: o_notice
+    default: 3 May 2021
   - Paticulars of objection: p_objection
     hint: What do you not agree with in your Neighbour's Notice? 
     input type: area
+    default: I do not agree with the fence being a grey colour or being 1.6m in height.  
   - Counter proposals: c_proposals
     hint: List your counter proposals to your Neighbour's Notice. 
     input type: area
+    default: That the fence is a charcoal colour and is 1.3m in height.  
 ---
 # this question block further explains the process of the button they just       clicked 
 question: "I want to replace my fence with a new one even though the existing one is not broken"
