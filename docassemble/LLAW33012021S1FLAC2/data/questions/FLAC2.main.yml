@@ -2,11 +2,22 @@
 ---
 metadata:
   title: |
-    FLAC2 App
+    PiCKet APP
   short title: |
-    FLAC2
+    PiCKet
   organisation: Flinders University
-  show login: True
+  show login: False
+  authors:
+    - name: Arjun Shivashankaraiah
+      organisation: Flinders University
+    - name: Brayden Mann
+      organisation: Flinders University
+    - name: Daniella De Vonte
+      organisation: Flinders University
+    - name: Liam O'Shaughnessy
+      organisation: Flinders University
+    - name: Lewis Suttie
+      organisation: Flinders University
 ---
 # Modify the post default screen part to attribute work to Flinders and your client
 # Remember to replace XXXX with your client's name.
@@ -22,12 +33,18 @@ default screen parts:
     </div>
     </div>
 ---
+# Remove debugging and logging in features
+features:
+  debug: False
+  hide standard menu: True
+---
 include:
   - FLAC2.endpoints.yml
   - FLAC2.questions.yml
 ---
 # This block is the welcome screen
 mandatory: True
+# Turn debug menu off
 question: "PiCKeT – SA’s Legal Fencing App"
 subquestion: |
   ## Welcome to PiCKeT!  
